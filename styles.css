@@ -53,3 +53,13 @@ button:active {
 	position:relative;
 	top:1px;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}

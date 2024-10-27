@@ -3,17 +3,6 @@
 <head>
     <title>Multiplication Table</title>
     <link rel="stylesheet" href="./styles.css">
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
 </head>
 <body>
 
