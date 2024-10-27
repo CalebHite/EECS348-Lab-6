@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EECS 348 Lab 6</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <h1>Practice 3</h1>
+    <label for="password1">First Password:</label>
+    <input name="password-1" id="password1" type="text">
+    <br>
+    <label for="password2">Second Password:</label>
+    <input name="password-2" id="password2" type="text">
+    <br>
+    <button onclick="validate()">Validate Passwords</button>
+    <script>
+        function validate() {
+            let password1 = document.getElementById('password1').value;
+            let password2 = document.getElementById('password2').value;
+
+            if (password1.length < 8) {
+                alert('Password 1 is less than 8 characters long.');
+            } else if (password2.length < 8) {
+                alert('Password 2 is less than 8 characters long.');
+            } else if (password1 !== password2) {
+                alert('Passwords are not the same.');
+            } else {
+                alert('Passwords are valid and match.');
+            }
+        }
+    </script>
+</body>
+</html>

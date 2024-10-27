@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background: #12121a;
+    color: #d3d3e8;
+    font-size: 1.2rem;
+    font-family: "Lora", serif;
+    margin: 5rem;
+}
+h1{
+    font-weight: 1000;
+}
+a{
+    color: #9a9afe;
+    text-decoration: none;
+}
+a:hover{
+    font-size: 1.3rem;
+    color: #e65332;
+}
+img{
+    width: 20rem;
+}
+input{
+    background: #12121a;
+    border: 1px solid #d3d3e8;
+    color: #d3d3e8;
+}
+input:focus{
+    background: #12121a;
+    color: #d3d3e8;
+}
+button {
+	box-shadow:inset 0px 1px 0px 0px #efdcfb;
+	background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+	background-color:#dfbdfa;
+	border-radius:6px;
+	border:1px solid #c584f3;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9752cc;
+    margin-top: 1rem;
+}
+button:hover {
+	background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+	background-color:#bc80ea;
+}
+button:active {
+	position:relative;
+	top:1px;
+}

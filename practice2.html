@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EECS 348 Lab 6</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <h1>Practice 2</h1>
+    <p id="test-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <form>
+        <label for="border-r">Border R(0-255): </label>
+        <input id="border-r" name="border-r" type="text">
+        <br>
+        <label for="border-g">Border G(0-255): </label>
+        <input id="border-g" name="border-g" type="text">
+        <br>
+        <label for="border-b">Border B(0-255): </label>
+        <input id="border-b" name="border-b" type="text">
+        <br>
+        <label for="border-w">Border Width: </label>
+        <input id="border-w" name="border-w" type="text">
+        <br>
+        <label for="bg-r">Background R(0-255): </label>
+        <input id="bg-r" name="bg-r" type="text">
+        <br>
+        <label for="bg-g">Background G(0-255): </label>
+        <input id="bg-g" name="bg-g" type="text">
+        <br>
+        <label for="bg-b">Background B(0-255): </label>
+        <input id="bg-b" name="bg-b" type="text">
+        <br>
+        <button type="button" onclick="changeStyles()">Change the Styles!</button>
+    </form>
+        
+    <script>
+    function changeStyles() {
+        const borderR = document.getElementById('border-r').value;
+        const borderG = document.getElementById('border-g').value;
+        const borderB = document.getElementById('border-b').value;
+        const borderW = document.getElementById('border-w').value;
+        const bgR = document.getElementById('bg-r').value;
+        const bgG = document.getElementById('bg-g').value;
+        const bgB = document.getElementById('bg-b').value;
+    
+        document.getElementById('test-p').style.border = `${borderW}px solid rgb(${borderR}, ${borderG}, ${borderB})`;
+        document.getElementById('test-p').style.backgroundColor = `rgb(${bgR}, ${bgG}, ${bgB})`;
+    }
+    </script>    
+</body>
+</html>
